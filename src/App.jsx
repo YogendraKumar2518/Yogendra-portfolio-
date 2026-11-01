@@ -1,11 +1,11 @@
 import "./App.css";
 
-import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/Hero/Hero";
+import Navbar from "./Components/Navbar/Navbar";
+import Hero from "./Components/Hero/Hero";
 import About from "./Components/About/About";
 import Project from "./Components/Project/Project";
 import Contact from "./Components/Contact/Contact";
-import Resume from "./components/Resume/Resume";
+import Resume from "./Components/Resume/Resume";
 
 import {
   Routes,
