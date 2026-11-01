@@ -1,0 +1,378 @@
+/* ==========================================
+   ABOUT
+========================================== */
+
+.about {
+  position: relative;
+
+  width: 100%;
+
+  padding: 120px 0;
+
+  background: #07131d;
+
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.about-container {
+  width: 84%;
+
+  max-width: 1250px;
+
+  margin: 0 auto;
+}
+
+
+/* ==========================================
+   HEADING
+========================================== */
+
+.about-heading {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 25px;
+
+  margin-bottom: 75px;
+}
+
+.about-heading h2 {
+  margin: 0;
+
+  font-size: clamp(42px, 4vw, 58px);
+
+  line-height: 1;
+
+  font-weight: 700;
+
+  letter-spacing: -1.5px;
+}
+
+.about-heading h2 span {
+  color: #ff604c;
+}
+
+.section-line {
+  width: 65px;
+
+  height: 2px;
+
+  background: #ff604c;
+}
+
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.about-content {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+
+/* ==========================================
+   TEXT
+========================================== */
+
+.about-text {
+  max-width: 570px;
+}
+
+.about-intro {
+  margin: 0 0 25px;
+
+  font-size: 24px;
+
+  line-height: 1.6;
+
+  color: #eeeeee;
+}
+
+.about-intro strong {
+  color: #ffffff;
+
+  font-weight: 700;
+}
+
+.about-intro span {
+  color: #ff604c;
+
+  font-weight: 600;
+}
+
+.about-text > p:not(.about-intro) {
+  margin: 0 0 20px;
+
+  color: #aeb7bd;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* ==========================================
+   RESUME BUTTON
+========================================== */
+
+.about-resume {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-top: 18px;
+
+  min-height: 52px;
+
+  padding: 0 28px;
+
+  border: 1px solid #ff604c;
+
+  background: #ff604c;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.about-resume:hover {
+  background: #ff705f;
+}
+
+
+/* ==========================================
+   SKILLS GRID
+========================================== */
+
+.skills-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 18px;
+}
+
+
+/* ==========================================
+   SKILL CARD
+========================================== */
+
+.skill-card {
+  min-height: 150px;
+
+  padding: 25px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  background: rgba(255, 255, 255, 0.025);
+
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+.skill-card:hover {
+  border-color: rgba(255, 96, 76, 0.6);
+
+  background: rgba(255, 96, 76, 0.05);
+}
+
+
+/* ==========================================
+   ICON
+========================================== */
+
+.skill-icon {
+  width: 42px;
+
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #ff604c;
+
+  font-size: 23px;
+}
+
+
+/* ==========================================
+   CARD TEXT
+========================================== */
+
+.skill-card h3 {
+  margin: 0 0 7px;
+
+  font-size: 18px;
+
+  font-weight: 600;
+}
+
+.skill-card p {
+  margin: 0;
+
+  color: #9ca8af;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 950px) {
+
+  .about {
+    padding: 100px 0;
+  }
+
+  .about-content {
+    gap: 45px;
+  }
+
+  .about-intro {
+    font-size: 21px;
+  }
+
+  .skill-card {
+    padding: 20px;
+
+    min-height: 140px;
+  }
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+  .about {
+    padding: 85px 0;
+  }
+
+  .about-container {
+    width: 88%;
+  }
+
+  .about-heading {
+    gap: 15px;
+
+    margin-bottom: 50px;
+  }
+
+  .about-heading h2 {
+    font-size: 40px;
+  }
+
+  .section-line {
+    width: 40px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+
+    gap: 55px;
+  }
+
+  .about-text {
+    max-width: none;
+
+    text-align: center;
+  }
+
+  .about-intro {
+    font-size: 20px;
+
+    line-height: 1.6;
+  }
+
+  .about-text > p:not(.about-intro) {
+    font-size: 15px;
+  }
+
+  .about-resume {
+    margin-top: 10px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 450px) {
+
+  .about {
+    padding: 70px 0;
+  }
+
+  .about-heading h2 {
+    font-size: 36px;
+  }
+
+  .section-line {
+    width: 30px;
+  }
+
+  .about-intro {
+    font-size: 18px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    min-height: 120px;
+
+    flex-direction: row;
+
+    align-items: center;
+  }
+}

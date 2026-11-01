@@ -1,0 +1,445 @@
+/* ==========================================
+   PROJECTS
+========================================== */
+
+.projects {
+  position: relative;
+
+  width: 100%;
+
+  padding: 120px 0;
+
+  background: #08151f;
+
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.projects-container {
+  width: 84%;
+
+  max-width: 1250px;
+
+  margin: 0 auto;
+}
+
+
+/* ==========================================
+   HEADING
+========================================== */
+
+.projects-heading {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 25px;
+
+  margin-bottom: 25px;
+}
+
+.projects-heading h2 {
+  margin: 0;
+
+  font-size: clamp(42px, 4vw, 58px);
+
+  line-height: 1;
+
+  font-weight: 700;
+
+  letter-spacing: -1.5px;
+}
+
+.projects-heading h2 span {
+  color: #ff604c;
+}
+
+.projects-line {
+  width: 65px;
+
+  height: 2px;
+
+  background: #ff604c;
+}
+
+
+/* ==========================================
+   INTRO
+========================================== */
+
+.projects-intro {
+  max-width: 650px;
+
+  margin: 0 auto 70px;
+
+  text-align: center;
+
+  color: #9faab1;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* ==========================================
+   PROJECT LIST
+========================================== */
+
+.projects-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 25px;
+}
+
+
+/* ==========================================
+   PROJECT CARD
+========================================== */
+
+.project-card {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: 100px 1fr 60px;
+
+  gap: 30px;
+
+  padding: 42px 45px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  background:
+    linear-gradient(
+      110deg,
+      rgba(255, 255, 255, 0.035),
+      rgba(255, 255, 255, 0.012)
+    );
+
+  transition:
+    border-color 0.35s ease,
+    transform 0.35s ease,
+    background 0.35s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(255, 96, 76, 0.55);
+
+  background:
+    linear-gradient(
+      110deg,
+      rgba(255, 96, 76, 0.07),
+      rgba(255, 255, 255, 0.015)
+    );
+}
+
+
+/* ==========================================
+   NUMBER
+========================================== */
+
+.project-number {
+  color: #ff604c;
+
+  font-size: 34px;
+
+  font-weight: 700;
+
+  line-height: 1;
+}
+
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.project-content {
+  max-width: 850px;
+}
+
+.project-category {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #ff604c;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1.5px;
+}
+
+.project-content h3 {
+  margin: 0 0 15px;
+
+  font-size: 30px;
+
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+}
+
+.project-content > p {
+  margin: 0;
+
+  max-width: 780px;
+
+  color: #aeb8be;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+/* ==========================================
+   TECHNOLOGIES
+========================================== */
+
+.project-technologies {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 25px;
+}
+
+.technology {
+  padding: 7px 12px;
+
+  border: 1px solid rgba(255, 96, 76, 0.25);
+
+  color: #d7dde0;
+
+  background: rgba(255, 96, 76, 0.04);
+
+  font-size: 12px;
+
+  border-radius: 2px;
+}
+
+
+/* ==========================================
+   LINKS
+========================================== */
+
+.project-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  margin-top: 28px;
+}
+
+.project-links a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.project-links a:hover {
+  color: #ff604c;
+
+  transform: translateX(3px);
+}
+
+.project-links svg {
+  font-size: 16px;
+}
+
+
+/* ==========================================
+   ARROW
+========================================== */
+
+.project-arrow {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: flex-end;
+
+  color: #ff604c;
+
+  font-size: 35px;
+
+  line-height: 1;
+
+  transition:
+    transform 0.35s ease;
+}
+
+.project-card:hover .project-arrow {
+  transform: translate(5px, -5px);
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 950px) {
+
+  .projects {
+    padding: 100px 0;
+  }
+
+  .project-card {
+    grid-template-columns: 70px 1fr 40px;
+
+    gap: 20px;
+
+    padding: 35px;
+  }
+
+  .project-number {
+    font-size: 28px;
+  }
+
+  .project-content h3 {
+    font-size: 26px;
+  }
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+  .projects {
+    padding: 85px 0;
+  }
+
+  .projects-container {
+    width: 88%;
+  }
+
+  .projects-heading {
+    gap: 15px;
+  }
+
+  .projects-heading h2 {
+    font-size: 40px;
+  }
+
+  .projects-line {
+    width: 40px;
+  }
+
+  .projects-intro {
+    margin-bottom: 50px;
+
+    font-size: 15px;
+  }
+
+  .project-card {
+    display: block;
+
+    padding: 30px;
+  }
+
+  .project-number {
+    margin-bottom: 25px;
+
+    font-size: 25px;
+  }
+
+  .project-content h3 {
+    font-size: 24px;
+  }
+
+  .project-content > p {
+    font-size: 14px;
+  }
+
+  .project-arrow {
+    position: absolute;
+
+    top: 25px;
+
+    right: 25px;
+
+    font-size: 28px;
+  }
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 450px) {
+
+  .projects {
+    padding: 70px 0;
+  }
+
+  .projects-heading h2 {
+    font-size: 36px;
+  }
+
+  .projects-line {
+    width: 30px;
+  }
+
+  .project-card {
+    padding: 25px;
+  }
+
+  .project-content h3 {
+    font-size: 21px;
+  }
+
+  .project-technologies {
+    gap: 6px;
+  }
+
+  .technology {
+    font-size: 11px;
+
+    padding: 6px 9px;
+  }
+
+  .project-links {
+    gap: 18px;
+
+    flex-wrap: wrap;
+  }
+}

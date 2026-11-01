@@ -1,0 +1,21 @@
+.app {
+  min-height: 100vh;
+  
+
+  background: #07131d;
+}
+
+.portfolio-section {
+  min-height: 100vh;
+
+  padding: 30px;
+ 
+
+  background: #07131d;
+
+  color: #ffffff;
+}
+
+.portfolio-section h1 {
+  font-size: 50px;
+}

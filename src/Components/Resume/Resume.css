@@ -1,0 +1,367 @@
+/* ==========================================
+   RESUME
+========================================== */
+
+.resume {
+  position: relative;
+
+  width: 100vw;
+  height: 100vh;
+
+  padding: 75px 0;
+ 
+
+  background: #08151f;
+
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.resume-container {
+  width: 84%;
+
+  max-width: 1250px;
+
+  margin: 0 auto;
+}
+
+
+/* ==========================================
+   HEADING
+========================================== */
+
+.resume-heading {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 25px;
+
+  margin-bottom: 45px;
+}
+
+.resume-heading h2 {
+  margin: 0;
+
+  font-size: clamp(42px, 4vw, 58px);
+
+  line-height: 1;
+
+  font-weight: 700;
+
+  letter-spacing: -1.5px;
+}
+
+.resume-heading h2 span {
+  color: #ff604c;
+}
+
+.resume-line {
+  width: 65px;
+
+  height: 2px;
+
+  background: #ff604c;
+}
+
+
+/* ==========================================
+   RESUME CONTENT
+========================================== */
+
+.resume-content {
+  display: grid;
+
+  grid-template-columns: 90px 1fr auto;
+
+  align-items: center;
+
+  gap: 30px;
+
+  padding: 38px 42px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  background: rgba(255, 255, 255, 0.025);
+
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+.resume-content:hover {
+  border-color: rgba(255, 96, 76, 0.5);
+
+  background: rgba(255, 96, 76, 0.035);
+}
+
+
+/* ==========================================
+   PDF ICON
+========================================== */
+
+.resume-icon {
+  width: 75px;
+
+  height: 75px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid rgba(255, 96, 76, 0.4);
+
+  color: #ff604c;
+
+  background: rgba(255, 96, 76, 0.05);
+
+  font-size: 31px;
+}
+
+
+/* ==========================================
+   TEXT
+========================================== */
+
+.resume-label {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #ff604c;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.8px;
+}
+
+.resume-text h3 {
+  margin: 0 0 10px;
+
+  font-size: 25px;
+
+  font-weight: 600;
+}
+
+.resume-text p {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: #9faab1;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.resume-buttons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.resume-view,
+.resume-download {
+  min-height: 48px;
+
+  padding: 0 20px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+/* View */
+
+.resume-view {
+  border: 1px solid #ff604c;
+
+  background: #ff604c;
+
+  color: #ffffff;
+}
+
+.resume-view:hover {
+  background: #ff705f;
+}
+
+
+/* Download */
+
+.resume-download {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  background: transparent;
+
+  color: #ffffff;
+}
+
+.resume-download:hover {
+  border-color: #ff604c;
+
+  color: #ff604c;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 950px) {
+
+  .resume {
+    padding: 70px 0;
+  }
+
+  .resume-content {
+    grid-template-columns: 70px 1fr;
+
+    padding: 32px;
+
+    gap: 25px;
+  }
+
+  .resume-buttons {
+    grid-column: 2;
+
+    justify-content: flex-start;
+  }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+  .resume {
+    padding: 60px 0;
+  }
+
+  .resume-container {
+    width: 88%;
+  }
+
+  .resume-heading {
+    gap: 15px;
+
+    margin-bottom: 40px;
+  }
+
+  .resume-heading h2 {
+    font-size: 40px;
+  }
+
+  .resume-line {
+    width: 40px;
+  }
+
+  .resume-content {
+    display: flex;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 35px 25px;
+  }
+
+  .resume-icon {
+    width: 65px;
+
+    height: 65px;
+
+    font-size: 27px;
+  }
+
+  .resume-text h3 {
+    font-size: 23px;
+  }
+
+  .resume-text p {
+    font-size: 14px;
+  }
+
+  .resume-buttons {
+    width: 100%;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+  }
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 450px) {
+
+  .resume {
+    padding: 55px 0;
+  }
+
+  .resume-heading h2 {
+    font-size: 36px;
+  }
+
+  .resume-line {
+    width: 30px;
+  }
+
+  .resume-content {
+    padding: 30px 20px;
+  }
+
+  .resume-buttons {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .resume-view,
+  .resume-download {
+    width: 100%;
+
+    box-sizing: border-box;
+  }
+}
